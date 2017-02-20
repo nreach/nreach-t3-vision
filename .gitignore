@@ -1,0 +1,6 @@
+/typo3
+/typo3_src
+/vendor
+/web
+composer.lock
+index.php

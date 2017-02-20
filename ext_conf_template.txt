@@ -1,0 +1,8 @@
+# cat=basic; type=string; label=nreach api endpoint
+nreachHost = https://nreach.azure-api.net/
+
+# cat=basic; type=string; label=image analyzer key
+nreachImageAnalyzerKey =
+
+# cat=basic; type=string; label=text analyzer key
+nreachTextAnalyzerKey =
