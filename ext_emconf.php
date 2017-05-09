@@ -11,11 +11,11 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-    'title' => 'nreacht3',
-    'description' => 'nreacht3',
+    'title' => 'nreach_t3_vision',
+    'description' => 'nreach package for image enhancements',
 	'category' => 'be',
 	'author' => '',
-	'author_email' => 'jg@nreach.io',
+	'author_email' => 'johnny@nreach.io',
 	'state' => 'alpha',
 	'internal' => '',
 	'uploadfolder' => '0',

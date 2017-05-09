@@ -1,5 +1,5 @@
 <?php
-namespace Nreach\T3Base\Form\Element;
+namespace Nreach\T3Vision\Form\Element;
 
 class ImageDescription extends Base
 {
