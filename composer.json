@@ -1,5 +1,5 @@
 {
-    "name": "nreach/t3vision",
+    "name": "nreach/nreach-t3-vision",
     "type": "typo3-cms-extension",
     "description": "nreach",
     "keywords": ["semantic", "images"],
@@ -18,7 +18,7 @@
     },
     "require": {
         "typo3/cms": "^8.7",
-        "nreach/t3base": "~1.0"
+        "nreach/nreach-t3-base": "~1.0"
     },
     "extra": {
         "branch-alias": {
