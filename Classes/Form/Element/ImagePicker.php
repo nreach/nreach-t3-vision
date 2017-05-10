@@ -1,7 +1,7 @@
 <?php
 namespace Nreach\T3Vision\Form\Element;
 
-class ImagePicker extends Base
+class ImagePicker extends \Nreach\T3Base\Form\Element\Base
 {
    public function render()
    {

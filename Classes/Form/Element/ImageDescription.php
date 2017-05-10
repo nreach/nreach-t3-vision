@@ -1,7 +1,7 @@
 <?php
 namespace Nreach\T3Vision\Form\Element;
 
-class ImageDescription extends Base
+class ImageDescription extends \Nreach\T3Base\Form\Element\Base
 {
    public function render()
    {
