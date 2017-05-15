@@ -7,7 +7,7 @@ class ImagePicker extends \Nreach\T3Base\Form\Element\Base
    {
        return array_merge_recursive(parent::render(), [
            'linkAttributes' => [
-               'class' => 'nreacht3-imagekeywords '
+               'class' => 'nreacht3-imagekeywords nreach-btn-container '
            ]
        ]);
    }
