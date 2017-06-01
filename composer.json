@@ -17,7 +17,6 @@
         }
     },
     "require": {
-        "typo3/cms": "^8.7",
         "nreach/nreach-t3-base": "~1.0"
     },
     "extra": {
