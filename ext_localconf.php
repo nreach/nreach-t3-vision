@@ -22,3 +22,9 @@ $GLOBALS['TYPO3_CONF_VARS']['SYS']['formEngine']['nodeRegistry'][] = [
 $GLOBALS['TYPO3_CONF_VARS']['SYS']['Objects']['TYPO3\\CMS\\Backend\\Form\\Container\\InlineControlContainer'] = array(
     'className' => 'Nreach\\T3Vision\\Xclass\\InlineControlContainer'
 );
+
+$GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks'][\Nreach\T3Vision\Task\AutoIndexerTask::class] = array(
+    'extension' => $_EXTKEY,
+    'title' => 'Nreach Vision AutoIndexer',
+    'description' => 'Automatically index up to 5 files'
+);
