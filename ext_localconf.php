@@ -28,3 +28,11 @@ $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['scheduler']['tasks'][\Nreach\T3Vision
     'title' => 'Nreach Vision AutoIndexer',
     'description' => 'Automatically index up to 5 files'
 );
+
+$signalSlotDispatcher = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
+$signalSlotDispatcher->connect(
+        \TYPO3\CMS\Core\Resource\ResourceStorage::class,
+        \TYPO3\CMS\Core\Resource\ResourceStorageInterface::SIGNAL_PostFileAdd,
+        \Nreach\T3Vision\Slots\FileUpload::class,
+        \Nreach\T3Vision\Slots\FileUpload::SIGNAL_VISION
+);
