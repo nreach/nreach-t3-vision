@@ -35,10 +35,10 @@ class AutoIndexerTask extends \TYPO3\CMS\Scheduler\Task\AbstractTask {
             } catch(\Exception $e) {
                 // not existing file
                 // mark as empty analysis
-                $if = '{}';
+                $result = '{}';
             }
 
-            resultpl ($body)
+            if ($body)
                 try {
                     $args = [];
                     $method = 'imageanalyzer';
