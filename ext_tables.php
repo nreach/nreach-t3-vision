@@ -18,3 +18,24 @@ $GLOBALS['TCA']['tt_content']['columns']['image']['config']['fieldControl']['nre
 $GLOBALS['TCA']['tt_content']['columns']['media']['config']['fieldControl']['nreach'] = [
     'renderType' => 'nreach_imagepicker'
 ];
+
+$columns = ['nreach_vision' => [
+    'label' => 'nreach vision',
+    'config' => [
+        'exclude' => 0,
+        'type' => 'text',
+        'renderType' => 't3editor',
+        'format' => 'javascript',
+        'rows' => 7
+    ]
+]];
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns(
+    'sys_file_metadata',
+    $columns
+);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'sys_file_metadata',
+    'nreach_vision'
+);
