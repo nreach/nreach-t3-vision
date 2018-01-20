@@ -18,7 +18,10 @@ class Vision implements \TYPO3\CMS\Core\SingletonInterface {
         $body = null;
         $result = null;
         try {
-            $body = base64_encode(Utility::uid2file($fileId)->getContents());
+            $file = Utility::uid2file($fileId);
+            $body = base64_encode(
+                Utility::limitImageDimension($file)->getContents()
+            );
         } catch(\Exception $e) {
             // not existing file
             // mark as empty analysis
@@ -45,7 +48,7 @@ class Vision implements \TYPO3\CMS\Core\SingletonInterface {
             ->execute();
 
         $signalSlotDispatcher = GeneralUtility::makeInstance(\TYPO3\CMS\Extbase\SignalSlot\Dispatcher::class);
-        $signalSlotDispatcher->dispatch(Vision, Vision::SIGNAL_ANALYZED, [$metadataId, $fileId, $result]);
+        $signalSlotDispatcher->dispatch(Vision::class, Vision::SIGNAL_ANALYZED, [$metadataId, $fileId, $result]);
 
         return $result;
     }
