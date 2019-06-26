@@ -1,27 +1,27 @@
 {
-    "name": "nreach/nreach-t3-vision",
-    "type": "typo3-cms-extension",
-    "description": "nreach",
-    "keywords": ["semantic", "images"],
-    "license": "GPL-2.0-or-later",
-    "minimum-stability": "dev",
-    "authors": [
-        {
-            "name": "Johannes Goslar",
-            "email": "johnny@nreach.io"
-        }
-    ],
-    "autoload": {
-        "psr-4": {
-            "Nreach\\T3Vision\\": "Classes/"
-        }
-    },
-    "require": {
-        "nreach/nreach-t3-base": "~1.0"
-    },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.x-dev"
-        }
+  "name": "nreach/nreach-t3-vision",
+  "type": "typo3-cms-extension",
+  "description": "nreach",
+  "keywords": ["semantic", "images"],
+  "license": "GPL-2.0-or-later",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "Johannes Bernhard Goslar",
+      "email": "johannes.goslar@kronberger-spiele.de"
     }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Nreach\\T3Vision\\": "Classes/"
+    }
+  },
+  "require": {
+    "nreach/nreach-t3-base": "^2.0"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.x-dev"
+    }
+  }
 }
